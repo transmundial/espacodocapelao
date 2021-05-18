@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Espaço do Capelão – MPC Brasil e Rádio Trans Mundial</title>
+		<link rel="icon" href="./logo-capelania-escolar-verde.png" sizes="32x32" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+		<style>
+			main .titulos {
+				font-family: Roboto, sans-serif;
+				font-weight: 600;
+				font-size: 1.3em;
+				animation-name: aparecer;
+				animation-duration: 5s;
+				animation-fill-mode: forwards;
+				color: #54595f;
+				opacity: 0;
+			}
+			main img {
+				margin: 25px 0;
+				position: relative;
+				top: -150px;
+				opacity: 0;
+				animation-name: deslizar-para-baixo;
+				animation-delay: 5s;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
+			}
+			main img:hover {
+				background-color: yellow;
+			}
+			@keyframes aparecer {
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+			@keyframes deslizar-para-baixo {
+				from {top: -150px; opacity: 0;}
+				to {top: 0; opacity: 1;}
+			}
+			.d1 {
+				animation-delay: 1s;
+			}
+			.d2 {
+				animation-delay: 2s;
+			}
+			.d3 {
+				animation-delay: 3s;
+			}
+			.d4 {
+				animation-delay: 4s;
+			}
+			#icons {
+				text-align: center;
+				animation-name: aparecer;
+				animation-delay: 5s;
+				animation-duration: 1s;
+				animation-fill-mode: forwards;
+				opacity: 0;
+			}
+			#icons p {
+				color: #afafaf;
+				font-size: 1.5em;
+				font-weight: 600;
+				letter-spacing: 1.1px;
+			}
+			#icons a {
+				display: inline-block;
+				background-color: #d3d3d3;
+				border-radius: 100%;
+				width: 75px;
+				height: 75px;
+				margin: 0 10px;
+			}
+			#icons a:hover {
+				background-color: #23a455;
+			}
+			#icons a i {
+				font-size: 38px;
+				padding: 18.5px;
+				color: white;
+			}
+			@media screen and (min-width:768px) {
+				main .titulos {
+					font-size: 3.4em;
+				}
+				#icons p {
+					font-size: 2.2em;
+				}
+			}
+		</style>
+	</head>
+	<body class="container px-3 py-5">
+		<main>
+			<p class="titulos">EM BREVE...</p>
+			<p class="titulos d1">UM ESPAÇO PARA O CAPELÃO</p>
+			<p class="titulos d2">PARA QUEM QUER SER</p>
+			<p class="titulos d3">PARA QUEM QUER CONHECER</p>
+			<p class="titulos d4">PARA QUEM É</p>
+			<img class="img-fluid d-none d-lg-block" src="./espaço-do-capelão.png" alt="Imagem com o texto escrito: espaço do capelão" />
+			<img class="img-fluid d-block d-lg-none" src="./espaço-do-capelão-mobile.png" alt="Imagem com o texto escrito: espaço do capelão" />
+			
+			<div id="icons">
+				<p>Fique por dentro das novidades</p>
+				<a href="https://www.facebook.com/capelaniaescolampc" target="_blank">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="https://www.instagram.com/capelaniaescolar_mpc/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+		</main>
+	</body>
+</html>
